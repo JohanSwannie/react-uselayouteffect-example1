@@ -33,10 +33,12 @@ function App() {
       >
         Toggle
       </button>
-      {show && (
+      {show ? (
         <h3 ref={h3Ref} style={h3Style}>
           We can now show the code at this position
         </h3>
+      ) : (
+        <h3>The code is now in this position</h3>
       )}
     </div>
   );
