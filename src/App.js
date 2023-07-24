@@ -13,9 +13,15 @@ function App() {
     h3Ref.current.style.top = `${bottom + 150}px`;
   }, [show]);
 
-  const h3Style = {
+  const h3Style1 = {
     position: "absolute",
     color: "Red",
+  };
+
+  const h3Style2 = {
+    position: "absolute",
+    top: "7rem",
+    color: "navy",
   };
 
   const buttonStyle = {
@@ -34,11 +40,11 @@ function App() {
         Toggle
       </button>
       {show ? (
-        <h3 ref={h3Ref} style={h3Style}>
-          We can now show the code at this position
+        <h3 ref={h3Ref} style={h3Style1}>
+          We can show that the code has now moved to this position
         </h3>
       ) : (
-        <h3>The code is now in this position</h3>
+        <h3 style={h3Style2}>The code is now in this position</h3>
       )}
     </div>
   );
