@@ -10,7 +10,7 @@ function App() {
       return;
     }
     const { bottom } = buttonRef.current.getBoundingClientRect();
-    h3Ref.current.style.top = `${bottom + 150}px`;
+    h3Ref.current.style.top = `${bottom + 400}px`;
   }, [show]);
 
   const h3Style1 = {
